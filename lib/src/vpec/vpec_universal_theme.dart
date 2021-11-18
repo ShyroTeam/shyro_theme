@@ -18,6 +18,7 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
   final Color highContrast = colors.highContrast;
   final Color mediumContrast = colors.mediumContrast;
   final Color lowContrast = colors.lowContrast;
+  final Brightness brightness = isDarkMode ? Brightness.dark : Brightness.light;
 
   return ThemeData(
     tabBarTheme: TabBarTheme(
@@ -35,7 +36,7 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
       TargetPlatform.android: CupertinoPageTransitionsBuilder(),
       TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
     }),
-    brightness: Brightness.dark,
+    brightness: brightness,
     textSelectionTheme: TextSelectionThemeData(
         selectionColor: accentColor.withOpacity(0.5),
         selectionHandleColor: accentColor),
