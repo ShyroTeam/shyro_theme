@@ -1,13 +1,4 @@
 library shyro_theme;
 
-import 'package:flutter/material.dart';
-
-class ShyroTheme {
-
-  static final ThemeData lightTheme = ThemeData();
-
-
-
-
-  static final ThemeData darkTheme = ThemeData();
-}
+// add here more themes
+export 'package:shyro_theme/src/vpec/vpec_theme.dart';
