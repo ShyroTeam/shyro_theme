@@ -89,8 +89,6 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
             fontWeight: semiBold)),
     iconTheme: const IconThemeData(
       size: 20.0,
-    ).copyWith(
-      size: 20.0,
     ),
     textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
