@@ -56,7 +56,7 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
         onSurface: highContrast,
         onBackground: highContrast,
         onError: backgroundColor,
-        brightness: Brightness.dark),
+        brightness: brightness),
     dialogBackgroundColor: firstLevelColor,
     textTheme: TextTheme(
         subtitle1:
@@ -87,7 +87,9 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
             fontSize: 18,
             fontFamily: 'Montserrat',
             fontWeight: semiBold)),
-    iconTheme: const IconThemeData().copyWith(
+    iconTheme: const IconThemeData(
+      size: 20.0,
+    ).copyWith(
       size: 20.0,
     ),
     textButtonTheme: TextButtonThemeData(
