@@ -1,6 +1,7 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:shyro_theme/gen/fonts.gen.dart';
 
 import '../font_weight.dart';
 import '../md2_tab_indicator.dart';
@@ -67,40 +68,40 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
             //News Card Title
             color: highContrast,
             fontSize: 16,
-            fontFamily: 'Montserrat',
+            fontFamily: FontFamily.montserrat,
             fontWeight: medium),
         headline4: TextStyle(
             //Alert Card Title
             color: highContrast,
             fontSize: 17,
-            fontFamily: 'Montserrat',
+            fontFamily: FontFamily.montserrat,
             fontWeight: semiBold),
         headline5: TextStyle(
             //used in time schedule for any time
             color: highContrast,
             fontSize: 36,
-            fontFamily: 'Montserrat',
+            fontFamily: FontFamily.montserrat,
             fontWeight: semiBold),
         headline6: TextStyle(
             //used in time schedule for any other
             color: highContrast,
             fontSize: 18,
-            fontFamily: 'Montserrat',
+            fontFamily: FontFamily.montserrat,
             fontWeight: semiBold)),
     iconTheme: const IconThemeData(
       size: 20.0,
     ),
     textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-      textStyle:
-          const TextStyle(fontFamily: 'Montserrat', fontWeight: semiBold),
+      textStyle: const TextStyle(
+          fontFamily: FontFamily.montserrat, fontWeight: semiBold),
       shape: const StadiumBorder(),
       primary: accentColor,
     )),
     outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-            textStyle:
-                const TextStyle(fontFamily: 'Montserrat', fontWeight: semiBold),
+            textStyle: const TextStyle(
+                fontFamily: FontFamily.montserrat, fontWeight: semiBold),
             shape: const StadiumBorder(),
             side: BorderSide(
               width: 1.5,
@@ -108,8 +109,8 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
             ))),
     elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-      textStyle:
-          const TextStyle(fontFamily: 'Montserrat', fontWeight: semiBold),
+      textStyle: const TextStyle(
+          fontFamily: FontFamily.montserrat, fontWeight: semiBold),
       shape: const StadiumBorder(),
       primary: accentColor,
       onPrimary: backgroundColor,
@@ -118,12 +119,12 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
       alignLabelWithHint: true,
       errorStyle: const TextStyle(
           color: Colors.redAccent,
-          fontFamily: 'Montserrat',
+          fontFamily: FontFamily.montserrat,
           fontWeight: semiBold),
-      labelStyle:
-          const TextStyle(fontFamily: 'Montserrat', fontWeight: semiBold),
-      hintStyle:
-          const TextStyle(fontFamily: 'Montserrat', fontWeight: semiBold),
+      labelStyle: const TextStyle(
+          fontFamily: FontFamily.montserrat, fontWeight: semiBold),
+      hintStyle: const TextStyle(
+          fontFamily: FontFamily.montserrat, fontWeight: semiBold),
       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       border: const OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(20))),
