@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:shyro_theme/shyro_theme.dart';
 
+import 'pages/buttons_page.dart';
+import 'pages/empty_page.dart';
+import 'pages/text_theme_page.dart';
+import 'pages/usual_widgets.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,6 +20,7 @@ class MyApp extends StatelessWidget {
       theme: VPECThemes.lightTheme(),
       darkTheme: VPECThemes.darkTheme(),
       home: const MyHomePage(title: 'ShyroThemes Demo'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -29,7 +35,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _bbarIndex = 0;
-  bool _extendFAB = false;
+  List<Widget> screens = const [
+    ButtonsTestPage(),
+    TextThemeTestPage(),
+    UsualWidgetsTestPage(),
+    EmptyPage(),
+    EmptyPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -44,35 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Elevated Button'),
-            ),
-            OutlinedButton(
-              onPressed: () {},
-              child: const Text('Outlined Button'),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const Text('Text Button'),
-            ),
-
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        isExtended: true,
-        tooltip: 'Test Add button',
-        onPressed: () {
-          setState(() {
-            _extendFAB = !_extendFAB;
-          });
-        },
-        child: const Icon(Icons.add_outlined),
+      body: PageStorage(
+        bucket: PageStorageBucket(),
+        child: screens[_bbarIndex],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
@@ -86,11 +72,11 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
               icon: Icon(Icons.ten_k_outlined),
               activeIcon: Icon(Icons.ten_k),
-              label: 'Item 0'),
+              label: 'Buttons'),
           BottomNavigationBarItem(
               icon: Icon(Icons.notifications_outlined),
               activeIcon: Icon(Icons.notifications),
-              label: 'Item 1'),
+              label: 'TextTheme'),
           BottomNavigationBarItem(
               icon: Icon(Icons.schedule_outlined),
               activeIcon: Icon(Icons.watch_later),
