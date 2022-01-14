@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
               icon: Icon(Icons.schedule_outlined),
               activeIcon: Icon(Icons.watch_later),
-              label: 'Item 2'),
+              label: 'Widgets'),
           BottomNavigationBarItem(
               icon: Icon(Icons.dashboard_outlined),
               activeIcon: Icon(Icons.dashboard),
