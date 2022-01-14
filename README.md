@@ -1,5 +1,5 @@
 ## ShyroTheme
-One based theme for all our apps.
+Specific themes package.
 
 ## Install
 Add this to your dependencies in pubspec.yaml
@@ -7,6 +7,21 @@ Add this to your dependencies in pubspec.yaml
 shyro_theme:
     git: https://github.com/ShyroTeam/shyro_theme
 ```
+
+## Supported themes
+### VPEC
+This is a corporate theme of [VPEC](https://energocollege.ru). Supports both light and dark themes.
+
+Usage:
+```dart
+MaterialApp(
+      theme: VPECThemes.lightTheme(),
+      darkTheme: VPECThemes.darkTheme(),
+    );
+```
+
+
+ 
 
 ## License
     Copyright 2021 ShyroTeam
