@@ -60,34 +60,66 @@ ThemeData vpecUniversalThemeData({required bool isDarkMode}) {
         brightness: brightness),
     dialogBackgroundColor: firstLevelColor,
     textTheme: TextTheme(
-        subtitle1:
-            TextStyle(fontSize: 15, color: mediumContrast, fontWeight: medium),
-        bodyText1:
-            TextStyle(color: highContrast, fontSize: 17, fontWeight: regular),
-        headline3: TextStyle(
-            //News Card Title
-            color: highContrast,
-            fontSize: 16,
-            fontFamily: FontFamily.montserrat,
-            fontWeight: medium),
-        headline4: TextStyle(
-            //Alert Card Title
-            color: highContrast,
-            fontSize: 17,
-            fontFamily: FontFamily.montserrat,
-            fontWeight: semiBold),
-        headline5: TextStyle(
-            //used in time schedule for any time
-            color: highContrast,
-            fontSize: 36,
-            fontFamily: FontFamily.montserrat,
-            fontWeight: semiBold),
-        headline6: TextStyle(
-            //used in time schedule for any other
-            color: highContrast,
-            fontSize: 18,
-            fontFamily: FontFamily.montserrat,
-            fontWeight: semiBold)),
+      subtitle1: TextStyle(
+        fontSize: 15,
+        color: mediumContrast,
+        fontWeight: medium,
+      ),
+      bodyText1: TextStyle(
+        fontSize: 16,
+        letterSpacing: 0.15,
+        color: highContrast,
+        fontWeight: regular,
+      ),
+      headline1: TextStyle(
+        fontSize: 44.8,
+        letterSpacing: -1,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: regular,
+      ),
+      headline2: TextStyle(
+        fontSize: 37.3,
+        letterSpacing: -0.6,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: regular,
+      ),
+      headline3: TextStyle(
+        fontSize: 31.1,
+        letterSpacing: -0.25,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: medium,
+      ),
+      headline4: TextStyle(
+        fontSize: 25.9,
+        letterSpacing: 0,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: medium,
+      ),
+      headline5: TextStyle(
+        fontSize: 21.6,
+        letterSpacing: 0.05,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: medium,
+      ),
+      headline6: TextStyle(
+        fontSize: 18,
+        letterSpacing: 0.2,
+        color: highContrast,
+        fontFamily: FontFamily.montserrat,
+        package: 'shyro_theme',
+        fontWeight: semiBold,
+      ),
+    ),
     iconTheme: const IconThemeData(
       size: 20.0,
     ),
